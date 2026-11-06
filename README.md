@@ -13,7 +13,10 @@ This project ranks 577 human-made fish passage barriers in the Nooksack River ba
 - **Most of the blocked habitat is in the lowlands.** The Nooksack River–Frontal Bellingham Bay sub-basin alone accounts for 291 km. The Whatcom Creek–Frontal Bellingham Bay sub-basin has 189 candidate barriers.
 - **The top of the ranking is lowland tributaries:** Cougar Creek (120th St), Tenmile Creek (E Hemmi Rd), an unnamed stream at SR 9, Deer Creek (Northwest Dr), Bender Ditch, Schneider Creek and Pepin Creek (Main St).
 
-Full outputs: [`results/gain_summary.txt`](results/gain_summary.txt), [`results/qa_summary.txt`](results/qa_summary.txt).
+Full outputs:
+- [`results/barriers_ranked.csv`](results/barriers_ranked.csv): all 577 candidates with score, gain, species, owner, sub-basin and WDFW's own figures.
+- [`results/qa_table.csv`](results/qa_table.csv): every FPDSI site in the study area with decoded fields, QA flags, role and snap details.
+- Run summaries: [`gain_summary.txt`](results/gain_summary.txt), [`qa_summary.txt`](results/qa_summary.txt), [`coverage_report.txt`](results/coverage_report.txt), [`network_summary.txt`](results/network_summary.txt).
 
 ## Data
 
@@ -116,7 +119,9 @@ Each script takes `--help` for paths and options, such as `--huc8` to change the
 | `barriers_qa.gpkg`, `qa_table.csv` | Every FPDSI site with decoded fields, QA flags, role and snap info |
 | `habitat_flowlines.gpkg` | Flowlines with species and weight |
 | `barriers_ranked.gpkg`, `barriers_ranked.csv` | Ranked candidates with gain, score, species, owner and sub-basin |
-| `*_summary.txt`, `coverage_report.txt` | Run summaries (copies in [`results/`](results/)) |
+| `*_summary.txt`, `coverage_report.txt` | Run summaries |
+
+Copies of the summaries, `qa_table.csv` and `barriers_ranked.csv` from the current run are in [`results/`](results/).
 
 ## Tools
 
