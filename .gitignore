@@ -1,0 +1,23 @@
+# Raw downloads (large; re-download from the sources in the README)
+*.zip
+*.gdb/
+NHDPLUS_*/
+WdfwFishPassage/
+SWIFD/
+data/raw/
+
+# Processed spatial outputs (regenerate with the scripts)
+data/processed/*.gpkg
+data/processed/flow_edges.csv
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+fishenv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
