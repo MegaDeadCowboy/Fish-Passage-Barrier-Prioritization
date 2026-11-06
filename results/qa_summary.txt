@@ -1,0 +1,55 @@
+FPDSI sites in study area (HUC8 17110004): 2,276
+
+QA flags (a site can have several):
+       4  qa_duplicate
+       2  qa_duplicate_dropped
+     443  qa_far_from_stream
+     192  qa_corrected
+     384  qa_missing_pct
+       0  qa_pct_conflict
+     398  qa_unknown_status
+     361  qa_no_owner
+      19  qa_only_big_river_nearby
+      39  qa_name_mismatch
+
+Roles:
+   1,342  excluded
+     577  candidate
+     357  stop
+
+Excluded, by reason:
+     523  not a barrier
+     389  barrier status unknown/blank
+     201  more than 50 m from a flowline
+     192  corrected
+      29  no feature type
+       4  culvert only near a large river
+       2  natural, not a barrier
+       2  duplicate
+
+Candidates: 577
+  passability estimated at 33%: 21
+  by passability:
+       222  33
+       170  67
+       164  0
+        21  Unknown
+  by feature type:
+       522  Culvert
+        36  Dam
+        11  Other
+         8  Non-Culvert Xing
+  by owner:
+       271  Private
+       153  County
+        89  City
+        56  State
+         4  Unknown
+         4  Tribal
+
+Snap method (snapped sites):
+   1,353  nearest eligible
+     480  name match
+
+Stop points total (candidates + stops): 934
+Snapped sites: median 4.0 m from a flowline

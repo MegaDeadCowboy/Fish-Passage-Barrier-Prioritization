@@ -1,0 +1,128 @@
+Study area: HUC8 17110004  (2,637 km²)
+Flowlines loaded: 20,925
+
+======================================================================
+FPDSI: contents
+======================================================================
+  WdfwFishPassage.gdb :: WDFW_FishPassageSite  [Point, 63,394 features]
+     fields: SiteRecordID, SiteId, SiteLatitude, SiteLongitude, FishPassageFeatureTypeCode, FeatureType, StreamName, TributaryToName, FishUseCode, FishUseCriteriaCode, RoadName, RoadMilePostMeasurement, FishPassageBarrierStatusCode, FishPassageBarrierReasonCode, PercentFishPassableCode, SignificantReachCode, OwnerTypeCode, DataSource, SurveyDate, LinealGainMeasurement, PriorityIndexTotalQuantity, PotentialSpecies, BarrierCorrectionTypeCode, BarrierCorrectionYearsText, CaseAreaFlag, FormLinkURL, WRIANumber, CountyName, IncorporatedCityName, HUC12Name, ProjectName
+  WdfwFishPassage.gdb :: ImageLinks  [None, 68,273 features]
+     fields: SiteId, ImageLink
+
+Using barrier layer: WdfwFishPassage.gdb :: WDFW_FishPassageSite
+
+======================================================================
+FPDSI: 2,276 sites in study area
+======================================================================
+
+Barrier status  [field: FishPassageBarrierStatusCode]
+    1,136  10.0
+      679  20.0
+      245  99.0
+      176  0.0
+       40  <null>
+
+Percent passable  [field: PercentFishPassableCode]
+      678  40.0
+      412  <null>
+      284  20.0
+      258  99.0
+      247  10.0
+      221  30.0
+      176  0.0
+
+Feature type  [field: FishPassageFeatureTypeCode]
+    1,522  1.0
+      376  5.0
+      241  2.0
+       77  3.0
+       40  <null>
+       20  4.0
+
+Owner type  [field: OwnerTypeCode]
+      922  4.0
+      440  2.0
+      344  <null>
+      275  5.0
+      261  1.0
+       17  12.0
+        8  6.0
+        6  7.0
+        3  3.0
+
+Fish use  [field: FishUseCode]
+    1,742  10.0
+      340  0.0
+      177  20.0
+       12  99.0
+        5  <null>
+
+Percent passable: 1,864 numeric, 0 are placeholder nulls (-99.99/-999), 412 non-numeric or empty
+
+Duplicate SiteId values: 0 rows
+Sites sharing identical coordinates (0.1 m): 4 rows
+
+Distance from barrier to nearest NHDPlus HR flowline:
+    1,420  0-10 m
+      293  10-25 m
+      139  25-50 m
+      124  50-100 m
+      168  100-250 m
+      132  >= 250 m
+  median 5.8 m, 90th pct 149.6 m
+
+======================================================================
+SWIFD: contents
+======================================================================
+  SWIFD.shp :: SWIFD  [LineString, 73,373 features]
+     fields: OBJECTID, LLID, LLID_STRM_, SPECIESRUN, SPECIES, RUNTIME_DE, DISTTYPE_D, USETYPE_DE, LIFEHIST_D, Length_m, Length_mi, ShapeSTLen
+
+Using fish distribution layer: SWIFD.shp :: SWIFD
+
+======================================================================
+SWIFD: 5,290 segments in study area
+======================================================================
+
+Species  [field: SPECIESRUN]
+    1,124  Coastal Cutthroat
+      970  Dolly Varden/ Bull Trout
+      926  Coho
+      837  Winter Steelhead
+      567  Fall Chum
+      320  Pink Odd Year
+      147  Rainbow Trout
+      139  Sockeye
+      127  Spring Chinook
+      104  Summer Steelhead
+       20  Fall Chinook
+        9  Kokanee
+
+Run  [field: SPECIESRUN]
+    1,124  Coastal Cutthroat
+      970  Dolly Varden/ Bull Trout
+      926  Coho
+      837  Winter Steelhead
+      567  Fall Chum
+      320  Pink Odd Year
+      147  Rainbow Trout
+      139  Sockeye
+      127  Spring Chinook
+      104  Summer Steelhead
+       20  Fall Chinook
+        9  Kokanee
+
+Distribution type  [field: DISTTYPE_D]
+    2,201  Gradient Accessible
+    2,117  Documented
+      690  Presumed
+      275  Potential
+        6  Artificial - Documented
+        1  <null>
+
+Use type / life history  [field: USETYPE_DE]
+    4,820  Presence
+      314  Spawning
+      156  Rearing
+
+No ReachCode field in SWIFD; habitat tagging will need a spatial overlay instead of a join.
+SWIFD line length in study area (all species, overlapping): 7,878 km

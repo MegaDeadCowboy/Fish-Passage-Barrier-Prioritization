@@ -1,0 +1,50 @@
+Habitat flowlines: 3,880 (1,260 km); ESA-weighted (w=2): 1,245 km
+Candidates scored: 577; with zero habitat gain: 191
+Total functional gain, all candidates: 431.6 km (no double counting: traces stop at the next barrier)
+Traces cut at a side-channel split: 61
+
+TOP 20
+ rk   score  gain_km  pct type      owner     stream                 road               species
+  1   26.99    13.50    0 Culvert   Private   Cougar Cr              footpath; 120th St Coho; Dolly Varden/ Bull Trout; Fall Chum; Winter Steelhead
+  2   20.86    15.57   33 Culvert   Private   Tenmile Cr             access rd; E Hemmi Coho; Dolly Varden/ Bull Trout; Fall Chum; Winter Steelhead
+  3   20.86    10.96    0 Culvert   State     unnamed                SR 9               Coho; Dolly Varden/ Bull Trout; Fall Chum; Pink Odd Year; Spring Chinook; Winter Steelhead
+  4   16.52    12.32   33 Culvert   County    Deer Cr                Northwest Dr       Coho; Dolly Varden/ Bull Trout; Fall Chum; Winter Steelhead
+  5   14.08     7.04    0 Culvert   City      Bender Ditch           nan                Coho; Dolly Varden/ Bull Trout; Fall Chum; Pink Odd Year; Spring Chinook; Winter Steelhead
+  6   13.69     6.85    0 Culvert   Private   Schneider Cr           farm rd; Harksell  Coho; Dolly Varden/ Bull Trout; Fall Chum; Winter Steelhead
+  7   11.98     8.94   33 Culvert   City      Pepin Cr               Main St            Coho; Dolly Varden/ Bull Trout; Fall Chum; Pink Odd Year; Winter Steelhead
+  8   10.25     7.65   33 Culvert   Tribal    unnamed                Levee Rd           Coho; Dolly Varden/ Bull Trout; Fall Chum; Pink Odd Year; Sockeye; Winter Steelhead
+  9   10.13     5.07    0 Culvert   County    unnamed                Northwest Dr; ROW  Coho; Dolly Varden/ Bull Trout; Fall Chum; Winter Steelhead
+ 10   10.04     5.02    0 Culvert   Private   unnamed                footpath; SR 542   Coho; Dolly Varden/ Bull Trout; Fall Chum; Winter Steelhead
+ 11    9.70     7.24   33 Dam       Private   unnamed                nan                Coho; Dolly Varden/ Bull Trout; Fall Chum; Pink Odd Year; Winter Steelhead
+ 12    9.23     6.89   33 Dam       Private   unnamed                nan                Coho; Dolly Varden/ Bull Trout; Fall Chum; Pink Odd Year; Winter Steelhead
+ 13    8.75     4.37    0 Culvert   Private   unnamed                railroad           Coho; Dolly Varden/ Bull Trout; Fall Chum; Winter Steelhead
+ 14    8.37     4.18    0 Culvert   State     Tennant Cr             access rd; Shady L Coho; Dolly Varden/ Bull Trout; Fall Chum; Winter Steelhead
+ 15    7.63    11.56   67 Dam       State     Kendall Cr             nan                Coho; Dolly Varden/ Bull Trout; Fall Chum; Pink Odd Year; Sockeye; Spring Chinook; Summer Steelhead; Winter Steelhead
+ 16    7.04     3.52    0 Non-Culve Private   High Cr                driveway; Mt Baker Coho; Dolly Varden/ Bull Trout; Fall Chum; Winter Steelhead
+ 17    7.03     5.25   33 Culvert   County    Kenny Cr               North Fork Rd      Coho; Dolly Varden/ Bull Trout; Fall Chum; Pink Odd Year; Spring Chinook; Winter Steelhead
+ 18    6.67    10.11   67 Other     Private   Squalicum Cr           nan                Coho; Dolly Varden/ Bull Trout; Fall Chinook; Fall Chum; Winter Steelhead
+ 19    6.48     3.24    0 Culvert   State     unnamed                SR 542             Coho; Dolly Varden/ Bull Trout; Winter Steelhead
+ 20    6.15     9.32   67 Culvert   State     Silver Cr              I-5                Coho; Dolly Varden/ Bull Trout; Fall Chum; Winter Steelhead
+
+BLOCKED HABITAT BY OWNER (sum of functional gain, km)
+  Private                271 barriers     204.9 km  score    261.7
+  County                 153 barriers      97.5 km  score    115.8
+  City                    89 barriers      62.0 km  score     80.8
+  State                   56 barriers      55.8 km  score     66.9
+  Tribal                   4 barriers       9.3 km  score     12.9
+  Unknown                  4 barriers       2.1 km  score      2.1
+
+BLOCKED HABITAT BY SUB-BASIN (HUC10)
+  Nooksack River-Frontal Bellingham Bay   276 barriers     290.7 km
+  Whatcom Creek-Frontal Bellingham Bay   189 barriers      72.2 km
+  South Fork Nooksack River              55 barriers      34.7 km
+  Lower North Fork Nooksack River        40 barriers      29.0 km
+  Upper North Fork Nooksack River        11 barriers       3.4 km
+  Middle Fork Nooksack River              6 barriers       1.6 km
+
+COMPARISON WITH WDFW 'Potential Habitat Gain' (LinealGainMeasurement)
+  barriers with both values: 233
+  Spearman, SWIFD habitat gain vs WDFW:       0.18
+  Spearman, all-stream length upstream vs WDFW: 0.13 (n=316)
+  median WDFW / our habitat gain (m): 2.47;  WDFW / all-stream length (m): 1.33
+  WDFW says >0 but our habitat gain is 0: 86 barriers

@@ -1,0 +1,10 @@
+Source GDB: NHDPLUS_H_1711_HU4_GDB.gdb
+HUC8(s): 17110004
+Flowlines kept: 20,925  (dropped 15 with no VAA)
+Total stream length: 7,307.0 km
+Edges: 21,210
+Weakly connected components: 85 (largest = 19,045 flowlines, 91.0%)
+Outlets (no downstream edge): 107
+Graph is acyclic: True
+Main outlet: NHDPlusID 55000800008249 (nan, arbolate sum 6,482.9 km)
+Length upstream of main outlet: 6,473.9 km (88.6% of total)
