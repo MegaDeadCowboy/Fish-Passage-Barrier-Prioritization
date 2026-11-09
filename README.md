@@ -83,6 +83,17 @@ Sanity-checking the top of the ranking turned up two bugs in earlier versions, b
 1. **Culverts snapping to the river.** Version 1 snapped each site to the nearest flowline. A culvert on Van Hook's Creek at North Fork Rd sat closer to the North Fork Nooksack than to its own creek. Its trace ran up the whole North Fork, and it ranked #1 with 83 km of habitat, including sockeye. That's implausible for a small-creek culvert. *Fix:* name-match snapping, and culverts excluded from large rivers.
 2. **Side channels tracing into the mainstem.** Version 2 still ranked a culvert at Nielson Rd #1 with 39 km including sockeye. It sat on a side channel, and walking upstream from a side channel leads back into the main river. *Fix:* traces stop at NHDPlus minor divergences (`Divergence = 2`). 61 traces are now cut there.
 
+**Imagery spot-check of the top 20 (Nov 9).** Each of the top 20 sites was checked on Esri World Imagery, with the stream network and FPDSI attributes alongside. **18 of 20 are confirmed** at a visible road, driveway, path or rail crossing on the expected stream. The 2 not confirmed are flagged, not wrong:
+
+- **#6 Schneider Cr (farm road off Harksell Rd):** no clear crossing is visible. Farm tracks often don't show in imagery, so this one can't be confirmed from the desk.
+- **#15 Kendall Cr dam:** a real structure, but it sits at the WDFW Kendall Creek Hatchery. It's likely the hatchery intake or weir, which may block fish on purpose, so it isn't a simple fix. It stays in the ranking with this note.
+
+Three sites have FPDSI stream names that differ from NHDPlus HR. Each was checked to make sure it isn't the snapping bug from version 1:
+
+- **#17 Kenny Cr** snapped to "Kenney Creek." That's a spelling difference.
+- **#5 Bender Ditch** snapped to Fishtrap Creek. The site sits exactly where Fishtrap Creek crosses Bender Rd in Lynden, and there's no separate ditch nearby. The snap is right; the FPDSI name is the odd one out.
+- **#1 Cougar Cr** snapped to Wiser Lake Creek, 0.3 m away. WDFW's site report (ID 700220, 2019 Level A) shows a 1.2 m round steel culvert under a 6.3 m wide channel, with a **flap-style floodgate that blocks passage** (0% passable). That's a creek-sized channel, not a side trickle. The site is at the creek's outlet near the Nooksack, so the floodgate cuts off the whole Wiser Lake Creek system above it. The #1 rank holds. The fix here would be a fish-friendly tide or flood gate, not just a bigger culvert.
+
 **Comparison with WDFW's own estimate.** FPDSI includes WDFW's `LinealGainMeasurement` ("Potential Habitat Gain"). Its Spearman rank correlation with this project's habitat gain is **0.18** (n = 233). Against plain upstream stream length, with no habitat filter, it's 0.13. So SWIFD habitat tagging isn't what drives the disagreement; the two measure different things. WDFW's value is a field-assessed potential habitat length under its own prioritization protocol. This project's value is network-derived, stops at the next barrier, and counts only mapped anadromous and bull trout habitat. Treat the two as complementary, not as one validating the other.
 
 ## Limitations
@@ -112,6 +123,13 @@ python scripts/04_habitat_gain.py
 ```
 
 Each script takes `--help` for paths and options, such as `--huc8` to change the study area.
+
+After the GeoPackages are published to ArcGIS Online as hosted feature layers, `05_item_metadata.py` sets each item's summary, description (lineage, QA, scoring), tags, credits and terms of use. It needs the ArcGIS API for Python (`pip install arcgis`), prompts for the password, and only prints the planned changes unless you pass `--apply`. The portal, username and web map ID are constants at the top of the script.
+
+```bash
+python scripts/05_item_metadata.py           # dry run
+python scripts/05_item_metadata.py --apply   # write, after backing up current metadata
+```
 
 | Output | Contents |
 |---|---|
