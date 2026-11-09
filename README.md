@@ -141,6 +141,8 @@ python scripts/05_item_metadata.py --apply   # write, after backing up current m
 
 Copies of the summaries, `qa_table.csv` and `barriers_ranked.csv` from the current run are in [`results/`](results/).
 
+Every field in the published layers is described in [`DATA_DICTIONARY.md`](DATA_DICTIONARY.md).
+
 ## Tools
 
 Python (geopandas, pyogrio, shapely, networkx, pandas), ArcGIS Online, ArcGIS API for Python.
