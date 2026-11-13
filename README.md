@@ -131,6 +131,8 @@ python scripts/05_item_metadata.py           # dry run
 python scripts/05_item_metadata.py --apply   # write, after backing up current metadata
 ```
 
+`06_build_storymap.py` builds the StoryMap as an unpublished draft (text, embedded web map, a sidecar zoomed to the top three sites, the owner table and credits) and gives the layers readable titles. It needs `pip install arcgis-mapping` as well. Publish from the StoryMaps builder so the issue checker runs.
+
 | Output | Contents |
 |---|---|
 | `flowlines.gpkg`, `flow_edges.csv` | Study-area stream network |
