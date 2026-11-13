@@ -22,6 +22,7 @@ from getpass import getpass
 import pandas as pd
 from arcgis.gis import GIS
 from arcgis.apps.storymap import (
+    Credits,
     Map,
     Sidecar,
     StoryMap,
@@ -235,8 +236,9 @@ def main():
     for p in CAVEATS:
         story.add(P(p))
 
+    credits = next(c for c in story.contents if isinstance(c, Credits))
     for content, attribution in CREDITS:
-        story.credits(content=content, attribution=attribution)
+        credits.add(content=content, attribution=attribution)
 
     item = story.save(title=STORY_TITLE, tags=TAGS, publish=False)
     print(f"\nSaved as an unpublished draft: {item.title}")
