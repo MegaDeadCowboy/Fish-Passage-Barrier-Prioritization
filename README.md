@@ -4,7 +4,7 @@
 
 This project ranks 577 human-made fish passage barriers in the Nooksack River basin (HUC8 17110004, Whatcom County, WA). The measure is the salmon, steelhead and bull trout habitat each one blocks. It combines WDFW's fish passage inventory, the WDFW/NWIFC statewide fish distribution and USGS NHDPlus High Resolution hydrography. The pipeline is a set of plain Python scripts, and every number below can be reproduced from the public downloads.
 
-> **Status:** analysis complete (Nov 2026). AGOL web map and StoryMap in progress.
+**StoryMap: [Small Pipes, Big Rivers](https://storymaps.arcgis.com/stories/749e2400d58d41568d41594c1fdc2621)**, the results for a general reader, with the interactive web map.
 
 ## Key findings
 
